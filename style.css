@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.timer{
+    height: 100px;
+    width: 400px;
+    border: 10px solid red;
+    color: white;
+    margin: 0 auto;
+    margin-top: 10%;
+    animation: RGB 4s ease infinite forwards;
+    box-shadow: rgb(255 0 0 / 36%) 1px 17px 65px 19px, rgb(255 0 0 / 37%) 0px 0px 44px 6px;
+    border-radius: 5px;
+
+}
+h2{
+    text-align: center;
+    margin-top: 6%;
+    color: red;
+    font-size: 35px;
+}
+.btns{
+    /* border: 1px solid white; */
+    width: 400px;
+    margin: 40px auto;
+    height: 50px;
+    border: none;
+}
+.btns button{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    border: 4px solid red;
+    margin-left: 25px;
+    font-size: 1.5vw;
+}
