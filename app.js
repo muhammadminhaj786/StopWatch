@@ -1,20 +1,23 @@
-//get element by id's
 var msecEle = document.getElementById('Msec')
 var secEle = document.getElementById('Sec')
 var mintEle = document.getElementById('mint')
 
-//create variable and assign 0
 var msec = 0
 var sec = 0
 var mint = 0
 
 var interval;
 
-//create timer function 
+var stopBtn = document.getElementById('stopBtn')
+stopBtn.style.display="none"
+resetBtn = document.getElementById('resetBtn')
+resetBtn.style.display="none"
+
+
+
 function timer(){
     msec++
     msecEle.innerHTML=msec
-  //applying condition 
     if(msec >= 100){
         sec++
         secEle.innerHTML=sec
@@ -32,6 +35,9 @@ function timer(){
 
 function startTimer() {
     interval = setInterval(timer, 10)
+    stopBtn.style.display=""
+    resetBtn.style.display="flex"
+
 }
 
 function stopTimer() {
